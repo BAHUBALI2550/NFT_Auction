@@ -1,66 +1,46 @@
-## Foundry
+# Ethereum NFT-Store with Dutch Auctions [POC]
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+![](https://ibb.co/2jTYgLm)
 
-Foundry consists of:
+A POC of a NFT-Store where one can mint NFT's and then sell them by creating dutch auctions.
+The app consists of three pages:
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+1. A main page where one can search for NFT's and mint them
+2. An auctions page where all currently running auctions are listed
+3. An inventory page where all numbers owned by the current user are listed
 
-## Documentation
+## Getting up and running
 
-https://book.getfoundry.sh/
+```bash
+# install dependencies
+$ npm install
 
-## Usage
+# deploy contracts
+# (make sure to first fire up ganache and to change the 'from' account in 'truffle.js')
+$ truffle migrate --reset --network ganache
 
-### Build
-
-```shell
-$ forge build
+# start app
+$ npm run dev
 ```
 
-### Test
+## Used packages
 
-```shell
-$ forge test
-```
+- [Truffle](https://truffleframework.com/truffle)
+- [web3.js](https://github.com/ethereum/web3.js/)
+- [Chart.js](https://github.com/chartjs/Chart.js)
+- [Annotation plugin for Chart.js](https://github.com/chartjs/chartjs-plugin-annotation)
+- [Fitty, Snugly text resizing](https://github.com/rikschennink/fitty)
 
-### Format
+## Used contracts
 
-```shell
-$ forge fmt
-```
+- [0xcert/ethereum-utils](https://github.com/0xcert/ethereum-utils)
+- [0xcert/ethereum-erc721](https://github.com/0xcert/ethereum-erc721)
 
-### Gas Snapshots
+## Tools
 
-```shell
-$ forge snapshot
-```
+- [MetaMask](https://metamask.io/)
+- [Ganache](https://truffleframework.com/ganache)
 
-### Anvil
 
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+## Screenshots
+![](https://ibb.co/2jTYgLm)
