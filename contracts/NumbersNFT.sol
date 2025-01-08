@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.9;
+pragma solidity >=0.4.22 <0.9.0;
 
-import "lib\framework\packages\0xcert-ethereum-erc721-contracts\src\contracts\nf-token-metadata.sol";
-import "lib\framework\packages\0xcert-ethereum-erc721-contracts\src\contracts\nf-token-enumerable.sol";
-import "lib\framework\packages\0xcert-ethereum-utils-contracts\src\contracts\permission\ownable.sol";
+import "./tokens/NFTokenMetadata.sol";
+import "./tokens/NFTokenEnumerable.sol";
+import "../node_modules/@0xcert/ethereum-utils/contracts/ownership/Ownable.sol";
 
 contract NumbersNFT is
   NFTokenMetadata,

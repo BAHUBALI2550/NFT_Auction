@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.9;
+pragma solidity >=0.4.22 <0.9.0;
 
-import "lib\framework\packages\0xcert-ethereum-utils-contracts\src\contracts\permission\ownable.sol";
+import "../node_modules/@0xcert/ethereum-utils/contracts/ownership/Ownable.sol";
 
 /**
  * @dev Truffle migrations manager.
