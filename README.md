@@ -43,5 +43,5 @@ $ npm run dev
 
 
 ## Screenshots
-![](https://imgur.com/EP1F6ly)
-![](https://imgur.com/BK73FMJ)
+![](https://i.imghippo.com/files/PfUO3908PWs.png)
+![](https://i.imghippo.com/files/WxeU5910O.png)
