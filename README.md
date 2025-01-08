@@ -1,6 +1,6 @@
 # Ethereum NFT-Store with Dutch Auctions [POC]
 
-![](https://imgur.com/N4mzAKX)
+![](https://i.imghippo.com/files/yg6782XrI.png)
 
 A POC of a NFT-Store where one can mint NFT's and then sell them by creating dutch auctions.
 The app consists of three pages:
